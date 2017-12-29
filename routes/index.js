@@ -14,4 +14,10 @@ router.get('/', function(req, res, next) {
    });
 });
 
+router.get('/api/v1/', function(req, res, next) {
+  res.send(
+    randomString('6', 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890')
+   );
+});
+
 module.exports = router;
