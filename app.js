@@ -4,10 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var compression = require('compression');
 
 var index = require('./routes/index');
 
 var app = express();
+
+// Gzip compression 
+app.use(compression());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -1,6 +1,7 @@
 body {
   background: #e4e4e4;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 a {
@@ -18,17 +19,8 @@ p {
 }
 
 .main-container {
-  margin: auto;
-  width: 70%;
-}
-
-.center-block {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%)
-}
-
-.text-center {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
